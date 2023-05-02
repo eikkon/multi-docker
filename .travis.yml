@@ -18,7 +18,7 @@ after_success:
   - echo "$DOCKER_PASSWORD" |docker login -u "$DOCKER_ID" --password-stdin
 
   #Take those images and push them to docker hub
-  - docker push eikkon/multi-client ./client
-  - docker push eikkon/multi-nginx ./nginx
-  - docker push eikkon/multi-server ./server
-  - docker push eikkon/multi-worker ./worker
+  - docker push eikkon/multi-client 
+  - docker push eikkon/multi-nginx 
+  - docker push eikkon/multi-server 
+  - docker push eikkon/multi-worker
