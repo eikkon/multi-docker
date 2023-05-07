@@ -23,8 +23,7 @@ after_success:
   - docker push eikkon/multi-nginx 
   - docker push eikkon/multi-server 
   - docker push eikkon/multi-worker
-
-  deploy:
+deploy:
     provider: elasticbeanstalk
     region: 'eu-north-1'
     app: 'multi-docker'
